@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{nome}}</title>
+    </head>
+    <body>
+        <h1>Home</h1>
+        <a href="/cadastro">Cadastro</a>
+        <span>Lista Cervas</span>
+        <ul>
+            {% for c in lista %}
+                <li>{{c}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
