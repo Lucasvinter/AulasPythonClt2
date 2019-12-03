@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Rg</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in lista %}
+                <tr>
+                    <td>{{ p['nome'] }}</td>
+                    <td>{{ p['rg'] }}</td>
+                    <td>{{ p['idade'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
