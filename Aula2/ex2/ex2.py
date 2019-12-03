@@ -43,7 +43,9 @@ def salvar():
     nome = request.args['nome']
     rg = request.args['rg']
     idade = int(request.args['idade'])
+    #--- criação de um dicionário para armazenar dados da pessoa
     pessoa = {'nome':nome, 'rg':rg, 'idade':idade}
+    #--- Adiciona o dicionário da pessoa à lista
     lista_pessoas.append(pessoa)
     return redirect('/lista')
 
