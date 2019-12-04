@@ -1,0 +1,9 @@
+Criar aplicação web para o calculo de operações matemáticas
+Web :
+    1 - Deve conter uma página onde usuário possa inserir dois números
+    2 - Deve conter uma página para exibir o resultado das operações
+    3 - Os calculos devem ser executados por funções de um arquivo externo
+Função
+    1- As operações matemáticas devem estar separadas em funções
+    2- Operações : Soma, Subtração, Multiplicação, Divisão inteira,
+    Divisão fracionada, Raiz
