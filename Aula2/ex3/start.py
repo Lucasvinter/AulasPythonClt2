@@ -27,6 +27,11 @@ def listagem():
 def salvar():
     lista_cadastro = {}
 
+    if('id' in request.args.keys()):
+        print('sim')
+    else:
+        print('nao')
+
     nome = request.args['nome']
     descricao = request.args['descricao']
     valor = request.args['valor']

@@ -1,6 +1,6 @@
 import random
 
-sorteado = int( random.randint(1,3) )
+sorteado = int( random.randint(1,8) )
 
 print('='*50)
 print('\n'*3)

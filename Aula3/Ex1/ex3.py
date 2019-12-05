@@ -12,17 +12,20 @@ def inicio():
 @app.route('/resultado', methods=['POST'])
 def resultado():
     resultado = {}
+    
     numero1 = int(request.form['n1'])
     numero2 = int(request.form['n2'])
 
-    resultado['soma'] = soma(numero1, numero2)
-    resultado['subtracao'] = subtracao(numero1, numero2)
-    resultado['multiplicacao'] = multiplicacao(numero1, numero2)
-    resultado['divisao_inteira'] = divisao(numero1, numero2)
-    resultado['divisao_fracionada'] = divisao_fracionada(numero1, numero2)
-    resultado['raiz'] = f'{raiz(numero1, numero2):.2f}'
+    calc = Calculadora(numero1, numero2)
 
-    return render_template('resultado.html',n1 = numero1, n2=numero2, resultados = resultado)
+    resultado['soma'] = calc.soma()
+    resultado['subtracao'] = calc.subtracao()
+    resultado['multiplicacao'] = calc.multiplicacao()
+    resultado['divisao_inteira'] = calc.divisao()
+    resultado['divisao_fracionada'] = calc.divisao_fracionada()
+    resultado['raiz'] = f'{calc.raiz():.2f}'
+
+    return render_template('resultado.html',n1 = calc.n1, n2=calc.n2, resultados = resultado)
 
 app.run(debug=True)
 
