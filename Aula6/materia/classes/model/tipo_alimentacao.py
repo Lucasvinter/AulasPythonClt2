@@ -1,0 +1,3 @@
+class TipoAlimentacao:
+    nome = ''
+    descricacao = ''

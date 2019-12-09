@@ -1,0 +1,9 @@
+Trabalho 1  - Em Duplas (Sorteadas)
+1 - Cadastro de pessoa
+2 - Cadastro de funcionario (pessoa)
+3 - Cadastro de equipes
+4 - Cadastro de linguagens
+5 - Utilizar DB
+6 - Utilizar web  com css(pode user bibliotecas locais) e js(validação de form)
+7 - Utilizar classes, herança getters e setters (muilta calma nessa hora) 
+8 - So utilizar o framework flask e flask_mysqldb e mais nada
