@@ -1,3 +1,5 @@
-from base_dao import BaseDao
+from .base_dao import BaseDao
 
-class TipoAlimentacaoDao(BaseDao):
+class TipoAlimentacaoDao:
+    def __init__(self):
+        print('ola')
