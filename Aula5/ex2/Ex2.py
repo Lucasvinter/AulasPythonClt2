@@ -1,32 +1,28 @@
-#1. A menina que gosta de português gosta de suco de abacaxi.
-#2. A mochila de Manuela não é laranja.
-#3. A garota da mochila vermelha gosta de suco de limão.
-#4. Aline gosta de história e não gosta de suco de uva.
-#5. Flávia não gosta de matemática.
+# O programador que trabalha com Java também conhece PostgreSql. 
+# O framework de frontend de Nicole não é VUE. 
+# O programador que usa Angular trabalha com MongoDb. 
+# Mateus é especialista Python e não conhece MsSqlServer. 
+# Tiago não sabe PHP. 
 
 
-lista_programadores = ['Aline', 'Flavia', 'Manuela']
+lista_programadores = ['Mateus', 'Tiago', 'Nicole']
 lista_linguagem = ['Pyhon', 'PHP', 'Java']
-lista_so = ['Linux', 'Macos', 'Windows']
-lista_ide = ['React', 'Angular', 'Vue']
+lista_so = ['PostgreSql', 'MongoDb', 'MsSqlServer']
+lista_ffe = ['React', 'Angular', 'Vue']
 
-#menina que  gosta de portugues, gosta de abacaxi
-#manoela não laranja
-#mochila vermelha suco de limao
-#aline historia nao uva
-#flavia matemática
+
 def removeg(dado):
-    if dado in lista_g:
-        lista_g.remove(dado)
+    if dado in lista_programadores:
+        lista_programadores.remove(dado)
 def removem(dado):
-    if dado in lista_m:
-        lista_m.remove(dado)
+    if dado in lista_linguagem:
+        lista_linguagem.remove(dado)
 def removes(dado):
-    if dado in lista_s:
-        lista_s.remove(dado)
+    if dado in lista_so:
+        lista_so.remove(dado)
 def removec(dado):
-    if dado in lista_c:
-        lista_c.remove(dado)
+    if dado in lista_ffe:
+        lista_ffe.remove(dado)
 
 def listag1(dado,p):
     lista1[p] = dado
@@ -39,29 +35,29 @@ lista1 = ['','','','']
 lista2 = ['','','','']
 lista3 = ['','','','']
 # g, m, s, c
-lista1[0] = lista_g[0]
-lista2[0] = lista_g[1]
-lista3[0] = lista_g[2]
+lista1[0] = lista_programadores[0]
+lista2[0] = lista_programadores[1]
+lista3[0] = lista_programadores[2]
 
-for g in lista_g:
-    for m in lista_m:
-        for s in lista_s:
-            for c in lista_c:
-                if(g == 'Aline' and m =='Historia' and s== 'Limao' and c =='Vermelha'):                  
+for g in lista_programadores:
+    for m in lista_linguagem:
+        for s in lista_so:
+            for c in lista_ffe:
+                if(g == 'Mateus' and m =='Pyhon' and s== 'MongoDb' and c =='Angular'):                  
                     listag1(m,1)
                     listag1(s,2)
                     listag1(c,3)
                     removem(m)
                     removes(s)
                     removec(c)
-                if(g == 'Flavia' and m =="Portugues" and s== 'Abacaxi' and c =='Laranja'):
+                if(g == 'Tiago' and m =="Java" and s== 'PostgreSql' and c =='Vue'):
                     listag2(m,1)
                     listag2(s,2)
                     listag2(c,3)
                     removem(m)
                     removes(s)
                     removec(c)
-                if(g == 'Manuela'and m =='Matematica'  and s=='Uva' and c =='Rosa' ):                    
+                if(g == 'Nicole'and m =='PHP'  and s=='MsSqlServer' and c =='React' ):                    
                     listag3(m,1)   
                     listag3(s,2)                    
                     listag3(c,3)
@@ -73,7 +69,7 @@ for g in lista_g:
 print(lista1)
 print(lista2)
 print(lista3,'\n')
-print(lista_g)
-print(lista_m)
-print(lista_s)
-print(lista_c)
+print(lista_programadores)
+print(lista_linguagem)
+print(lista_so)
+print(lista_ffe)
